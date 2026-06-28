@@ -181,7 +181,7 @@ The On Destroy event handler executes when the Screen or Block is going to be de
 
 Notes:
 
-* The DOM of the present and target screens is loaded when this event is triggered. To ensure that you are operating on the screen being destroyed, execute logic only for the HTML `div` element with the class `active-screen`.
+* The DOM of the present and target screens is loaded when this event is triggered. To ensure that you are operating on the screen being destroyed, execute logic only for the HTML `div` element without the class `active-screen`.
 * Keep this event handler action simple and avoid slow actions such as server requests, since it may delay the removal of the Screen or Block and, in the case of exiting a screen, the loading of the next screen.
 
 Use cases you can implement with this event handler:
